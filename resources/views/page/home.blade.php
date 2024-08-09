@@ -11,18 +11,19 @@
     <nav>
         <div class="navbar">
             <div class="left-row">
-                <p><a href="recipe.blade.php">Berita Portal</a>
+                <p><a href="recipe.blade.php">RECIPES</a>
                 </p>
             </div>
             <div class="logo">
-                <img src="cucinare.jpg" alt="">
+                <img src="cucinare 2.png" alt="">
             </div>
             <div class="right-row">
-                <div class="nav-menu">
-                    <p><a href="profile.blade.php"></a>Profile</p>
-                </div>
+                <p><a href="profile.blade.php">PROFILE</a></p>
             </div>
         </div>
     </nav>
+    
+    <div class="h1"><hr></div>
+    <div class="vl"></div>
 </body>
 </html>

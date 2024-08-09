@@ -14,21 +14,49 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF9E2;
 }
 
-.navbar .right-row{
+.navbar .right-row p a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.navbar .right-row p a:hover{
+    text-decoration: underline;
+}
+
+.navbar .left-row p a{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .left-row p a:hover{
+    text-decoration: underline;
 }
 
 .navbar .logo img{
     justify-content: center;
     width: 200px;
-    height: 50px;
+    height: 100px;
 }
 
-.nav-menu ul li a:hover{
-    text-decoration: underline;
+.vl {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 400px;
+    margin-left: 550px;
+    display: flex;
+}
+
+.h1 hr{
+    justify-content: center;
+    display: flex;
+    margin-left: 100px;  
+    margin-right: 100px;  
 }
