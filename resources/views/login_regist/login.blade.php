@@ -20,18 +20,10 @@
 
     <div class="form">
         <form action="" method="post">
-            <div class="email">
-                <input type="text" name="email" placeholder="EMAIL">
-            </div>
-            <div class="username">
-                <input type="text" name="usn" placeholder="USERNAME">
-            </div>
-            <div class="password">
-                <input type="password" name="password" placeholder="PASSWORD">
-            </div>
-            <div class="button">
+                <input type="text" class="email" name="email" placeholder="EMAIL">
+                <input type="text" class="username" name="usn" placeholder="USERNAME">
+                <input type="password" class="password" name="password" placeholder="PASSWORD">
                 <button type="submit" class="button" name="login">LOGIN</button>
-            </div>
             <div class="regist">
                 <p>Don't have account? <a href="register.blade.php">Register</a>
                 <p>
