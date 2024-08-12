@@ -24,6 +24,19 @@
     </nav>
     
     <div class="h1"><hr></div>
-    <div class="vl"></div>
+
+    <div class="homeleft">
+        <div class="namamakanan">
+            <h3>Martabak</h3>
+        </div>
+       <div class="descmakanan">
+            <p>Martabak adalah makanan khas bangka yang diadaptasi dari makanan arab yang biasa
+                dimakan menggunakan topping coklat
+            </p>
+       </div>
+       <img src="martabak.jpg" alt="">
+    </div>
+
+    <div class="divider"></div>
 </body>
 </html>
