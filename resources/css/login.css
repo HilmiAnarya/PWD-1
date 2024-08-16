@@ -37,6 +37,7 @@
     justify-content: center;
     border: #000000;
     align-items: center;
+    margin-left: -6px;
 }
 
 .email{
