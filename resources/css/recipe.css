@@ -31,19 +31,33 @@
     column-count: 3;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .list-recipe .col1{
-    display: flex;
     justify-content: center;
+    text-align: center;
+    img{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .list-recipe .col2{
-    display: flex;
     justify-content: center;
+    text-align: center;
+    img{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .list-recipe .col3{
-    display: flex;
     justify-content: center;
+    text-align: center;
+    img{
+        width: 400px;
+        height: 300px;
+    }
 }

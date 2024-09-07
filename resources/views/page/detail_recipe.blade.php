@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/recipe.css">
+    <link rel="stylesheet" href="../../css/detail_recipe.css">
 </head>
 <body>
     <nav>
@@ -21,20 +21,19 @@
         </div>
     </nav>
 
-    <div class="list-recipe">
-        <div class="col1">
-            <img src="ketoprak.jpg" alt="">
-            <p>Ketoprak</p>
+    <div class="container">
+        <div class="namaresep">
+            <h1>Ketoprak</h1>
         </div>
-        <div class="col2">
-            <img src="martabak.jpg" alt="">
-            <p>Martabak</p>
+        <div class="gambar-resep">
+            <img src="ketoprak" alt="">
         </div>
-        <div class="col3">
-            <img src="mi ayam.jpg" alt="">
-            <p>Mie Ayam</p>
+        <div class="bahan">
+
+        </div>
+        <div class="step">
+
         </div>
     </div>
-    
 </body>
 </html>
