@@ -9,14 +9,16 @@
 <body>
     <nav>
         <div class="navbar">
-            <div class="left-row">
-                <p>LOGIN</p>
-            </div>
             <div class="logo">
-                <img src="../page/cucinare 2.png" alt="">
+                <img src="img/cucinare 2.png" alt="">
             </div>
         </div>
     </nav>
+
+    <div class="textform">
+        <h2>Login to your account</h2>
+    </div>
+
 
     <div class="form">
         <form action="" method="post">
@@ -25,7 +27,7 @@
                 <input type="password" class="password" name="password" placeholder="PASSWORD">
                 <button type="submit" class="button" name="login">LOGIN</button>
             <div class="regist">
-                <p>Don't have account? <a href="register.blade.php">Register</a>
+                <p>Don't have account? <a href="/register   ">Register</a>
                 <p>
             </div>
         </form>
