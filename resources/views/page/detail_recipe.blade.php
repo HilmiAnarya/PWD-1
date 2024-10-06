@@ -13,7 +13,7 @@
                 <p>Recipes</p>
             </div>
             <div class="logo">
-                <img src="img/cucinare 2.png" alt="">
+                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
                 <p>Profile</p>

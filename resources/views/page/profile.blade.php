@@ -11,15 +11,19 @@
     <nav>
         <div class="navbar">
             <div class="left-row">
-                <p>LOGIN</p>
+                <p><a href="/login">Login</a></p>
             </div>
             <div class="logo">
-                <img src="img/cucinare 2.png" alt="">
+                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
-                <p>Profile</p>
+                <div class="profile">
+                    <p>Profile</p>
+                </div>
                 <p>--------------</p>
-                <p>Add Recipe</p>
+                <div class="add">
+                    <p><a href="/cr">Add Recipe</a></p>
+                </div>
             </div>
         </div>
     </nav>

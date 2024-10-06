@@ -10,27 +10,34 @@
     <nav>
         <div class="navbar">
             <div class="left-row">
-                <p>Recipes</p>
+                <p> <a href="/recipe">Recipes</a>
+                </p>
             </div>
             <div class="logo">
-                <img src="img/cucinare 2.png" alt="">
+                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
-                <p>Profile</p>
+                <p> <a href="/profile">Profile</a>
+                </p>
             </div>
         </div>
     </nav>
 
+    <div class="recommendation">
+        <h1>Todays Recommendation</h1>
+    </div>
+
+
     <div class="list-recipe">
-        <div class="col1">
+        <div class="col">
             <img src="img/ketoprak.jpg" alt="">
             <p>Ketoprak</p>
         </div>
-        <div class="col2">
+        <div class="col">
             <img src="img/martabak.jpg" alt="">
             <p>Martabak</p>
         </div>
-        <div class="col3">
+        <div class="col">
             <img src="img/mi ayam.jpg" alt="">
             <p>Mie Ayam</p>
         </div>

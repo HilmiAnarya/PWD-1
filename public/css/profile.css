@@ -41,3 +41,7 @@
 .container .profile{
     text-align: center;
 }
+
+.profile p{
+    font-weight: bold;
+}

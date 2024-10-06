@@ -10,10 +10,10 @@
     <nav>
         <div class="navbar">
             <div class="left-row">
-                <p>BACK</p>
+                <p><a href="/profile">Back</a></p>
             </div>
             <div class="logo">
-                <img src="img/cucinare 2.png" alt="">
+                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
             </div>
         </div>
     </nav>
@@ -21,17 +21,17 @@
     <div class="create">
         <form action="{{url('')}}" method="post">
             <div class="name">
-                <label for class="form-label">NAME:</label>
+                <label for class="form-label">Name:</label>
             </div>
             <input type="text" class="Recipe" name="recipe_name" placeholder="Recipe name:">
 
             <div class="desc">
-                <label for class="form-label">DESCRIPTION:</label>
+                <label for class="form-label">Description:</label>
             </div>
             <input type="text" class="Desc" name="description" placeholder="Description:">
 
             <div class="image">
-                <label for class="form-label">IMAGE:</label>
+                <label for class="form-label">image:</label>
             </div>
             <input type="file" class="img" name="image">
 

@@ -10,7 +10,7 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="img/cucinare 2.png" alt="">
+                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
             </div>
         </div>
     </nav>
