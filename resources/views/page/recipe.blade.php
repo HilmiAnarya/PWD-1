@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/recipe.css">
+    <link rel="stylesheet" href="{{ asset('/css/recipe.css') }}">
 </head>
 <body>
     <nav>
@@ -13,7 +13,7 @@
                 <p>Recipes</p>
             </div>
             <div class="logo">
-                <img src="../page/cucinare 2.png" alt="">
+                <img src="img/cucinare 2.png" alt="">
             </div>
             <div class="right-row">
                 <p>Profile</p>
@@ -23,18 +23,18 @@
 
     <div class="list-recipe">
         <div class="col1">
-            <img src="ketoprak.jpg" alt="">
+            <img src="img/ketoprak.jpg" alt="">
             <p>Ketoprak</p>
         </div>
         <div class="col2">
-            <img src="martabak.jpg" alt="">
+            <img src="img/martabak.jpg" alt="">
             <p>Martabak</p>
         </div>
         <div class="col3">
-            <img src="mi ayam.jpg" alt="">
+            <img src="img/mi ayam.jpg" alt="">
             <p>Mie Ayam</p>
         </div>
     </div>
-    
+
 </body>
 </html>

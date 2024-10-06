@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/profile.css">
+    <link rel="stylesheet" href="{{ asset('/css/profile.css') }}">
 </head>
 <body>
     <nav>
@@ -14,7 +14,7 @@
                 <p>LOGIN</p>
             </div>
             <div class="logo">
-                <img src="../page/cucinare 2.png" alt="">
+                <img src="img/cucinare 2.png" alt="">
             </div>
             <div class="right-row">
                 <p>Profile</p>

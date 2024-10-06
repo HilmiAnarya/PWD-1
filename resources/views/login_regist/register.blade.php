@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/register.css">
+    <link rel="stylesheet" href="{{ asset('/css/register.css') }}">
 </head>
 <body>
     <nav>
@@ -17,7 +17,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="form">
         <form action="" method="post">
                 <input type="text" class="email" name="email" placeholder="EMAIL">
