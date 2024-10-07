@@ -18,19 +18,20 @@
         </div>
     </nav>
 
-    <div class="create">
+    <div class="form">
         <form action="{{url('')}}" method="post">
-            <div class="name">
+            <div class="namelab">
                 <label for class="form-label">Name:</label>
             </div>
-            <input type="text" class="Recipe" name="recipe_name" placeholder="Recipe name:">
+            <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:">
 
-            <div class="desc">
+            <div class="desclab">
                 <label for class="form-label">Description:</label>
             </div>
-            <input type="text" class="Desc" name="description" placeholder="Description:">
 
-            <div class="image">
+            <textarea class="desc" name="desc" placeholder="Description:"></textarea>
+
+            <div class="imagelab">
                 <label for class="form-label">image:</label>
             </div>
             <input type="file" class="img" name="image">

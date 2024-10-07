@@ -9,7 +9,7 @@ use Illuminate\View\View;
 class RecipeController extends Controller
 {
     public function index(){
-        $recipes = Recipe::all();
+        $recipes = Re5cipe::all();
         return view('recipe', compact('recipes'));
     }
 
