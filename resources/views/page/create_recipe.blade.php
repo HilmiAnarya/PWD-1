@@ -19,7 +19,8 @@
     </nav>
 
     <div class="create">
-        <form action="{{url('')}}" method="post">
+        <form action="{{route('createsp')}}" method="post">
+            @csrf
             <div class="name">
                 <label for class="form-label">Name:</label>
             </div>
@@ -33,9 +34,9 @@
             <div class="image">
                 <label for class="form-label">image:</label>
             </div>
-            <input type="file" class="img" name="image">
+            <input type="file" class="img" name="img">
 
-            <button type="submit" class="button"  name="upload_baru">kirim</button>
+            <button type="submit" class="button">kirim</button>
 
         </form>
     </div>

@@ -45,7 +45,7 @@
 .list-recipe .col{
     justify-content: center;
     text-align: center;
-    img{
+    .img{
         width: 400px;
         height: 300px;
     }

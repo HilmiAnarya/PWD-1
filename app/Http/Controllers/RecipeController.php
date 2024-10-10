@@ -10,7 +10,7 @@ class RecipeController extends Controller
 {
     public function index(){
         $recipes = Recipe::all();
-        return view('recipe', compact('recipes'));
+        return view('/page/recipe', compact('recipes'));
     }
 
     public function create(){

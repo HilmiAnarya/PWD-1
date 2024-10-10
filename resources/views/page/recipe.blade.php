@@ -27,19 +27,14 @@
         <h1>Todays Recommendation</h1>
     </div>
 
-
     <div class="list-recipe">
         <div class="col">
-            <img src="img/ketoprak.jpg" alt="">
-            <p>Ketoprak</p>
-        </div>
-        <div class="col">
-            <img src="img/martabak.jpg" alt="">
-            <p>Martabak</p>
-        </div>
-        <div class="col">
-            <img src="img/mi ayam.jpg" alt="">
-            <p>Mie Ayam</p>
+            @foreach($recipes as $resep)
+                <div class="img">
+                    {{$resep->img}}
+                </div>
+                    {{$resep->recipe_name}}
+            @endforeach
         </div>
     </div>
 

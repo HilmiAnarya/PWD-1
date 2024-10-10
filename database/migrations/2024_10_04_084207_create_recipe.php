@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('recipe', function (Blueprint $table) {
-            $table->id();
-            $table->string("recipe_name",255)->require();
-            $table->string("description", 255)->require();
-            $table->string("creator_name", 255)->require();
-            $table->dateTime("publish_date")->require();
-            $table->string("img",255)->require();
+        Schema::create('recipes', function (Blueprint $table) {
+            $table->id()->autoIncrement();
+            $table->string("recipe_name",255);
+            $table->string("description", 255);
+            $table->string("creator_name", 255);
+            $table->timestamp("publish_date");
+            $table->string("img",255);
         });
     }
 
