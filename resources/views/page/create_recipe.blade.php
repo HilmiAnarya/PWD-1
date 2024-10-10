@@ -18,20 +18,27 @@
         </div>
     </nav>
 
+<<<<<<< HEAD
     <div class="create">
         <form action="{{route('createsp')}}" method="post">
             @csrf
             <div class="name">
+=======
+    <div class="form">
+        <form action="{{url('')}}" method="post">
+            <div class="namelab">
+>>>>>>> 6673eac9e2560c35d1052efe2eace983ed7c39dc
                 <label for class="form-label">Name:</label>
             </div>
-            <input type="text" class="Recipe" name="recipe_name" placeholder="Recipe name:">
+            <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:">
 
-            <div class="desc">
+            <div class="desclab">
                 <label for class="form-label">Description:</label>
             </div>
-            <input type="text" class="Desc" name="description" placeholder="Description:">
 
-            <div class="image">
+            <textarea class="desc" name="desc" placeholder="Description:"></textarea>
+
+            <div class="imagelab">
                 <label for class="form-label">image:</label>
             </div>
             <input type="file" class="img" name="img">
