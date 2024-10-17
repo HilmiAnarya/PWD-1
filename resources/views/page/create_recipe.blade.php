@@ -23,11 +23,9 @@
         <form action="{{route('createsp')}}" method="post">
             @csrf
             <div class="name">
-=======
     <div class="form">
         <form action="{{url('')}}" method="post">
             <div class="namelab">
->>>>>>> 6673eac9e2560c35d1052efe2eace983ed7c39dc
                 <label for class="form-label">Name:</label>
             </div>
             <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:">
