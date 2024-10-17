@@ -17,4 +17,5 @@ class Recipe extends Model
         'publish_date',
         'img'
     ];
+
 }

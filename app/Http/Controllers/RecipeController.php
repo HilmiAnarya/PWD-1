@@ -17,6 +17,10 @@ class RecipeController extends Controller
         return view('recipes.create');
 
     }
+
+    public function edit(){
+        return view('recipes.edit');
+    }
     public function store(Request $request){
         $create = Recipe::create($request->all());
         dd($create);
@@ -24,8 +28,18 @@ class RecipeController extends Controller
     }
 
     public function delete(){
-        $find = Recipe::find('id');
-        $find->delete();
+        $finddel = Recipe::find('id');
+        $finddel->delete();
         return view('/page/profile');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $item = Recipe::find($id);
+        $item->recipe_name = $request->input('recipe_name');
+        $item->description = $request->input('description');
+        $item->img = $request->input('img');
+
+        return redirect('/page/profile');
     }
 }

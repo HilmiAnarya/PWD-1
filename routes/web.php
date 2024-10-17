@@ -25,13 +25,21 @@ Route::get('/cr', function(){
     return view('/page/create_recipe');
 });
 
+Route::get('/editform', function(){
+    return view('/page/edit_recipe');
+});
+
 Route::get('/showrecipe', [RecipeController::class, 'index'])->name('showrecipe');
 
 Route::get('/createsg', [RecipeController::class, 'create']);
 Route::post('/createsp', [RecipeController::class, 'store'])->name('createsp');
 
+route::get('/editg', [RecipeController::class, 'edit']);
+Route::put('/items', [RecipeController::class, 'update'])->name('updateitems');
+
+
 Route::post('/loginp', [LoginController::class, 'loginPost'])->name('loginp');
 Route::post('/registerp', [Registercontroller::class, 'registerPost'])->name('registerp');
 
-//route::delete('/deletesp/{id}', [RecipeController::class, 'destroy'])->name('deletesp');
+route::delete('/deleter', [RecipeController::class, 'delete'])->name('deletes');
 

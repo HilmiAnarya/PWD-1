@@ -18,23 +18,24 @@
     </div>
 </nav>
 
-<div class="create">
-    <form action="{{route('')}}" method="post">
+<div class="edit">
+    <form action="{{route('updateitems')}}" method="post">
         @csrf
+        @method('PUT')
         <div class="namelab">
             <label for class="form-label">Name:</label>
         </div>
-        <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:">
+        <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:" value="{{ $item->recipe_name }}">
 
         <div class="desclab">
             <label for class="form-label">Description:</label>
         </div>
-        <textarea class="desc" name="desc" placeholder="Description:"></textarea>
+        <textarea class="desc" name="desc" placeholder="Description:" value="{{ $item->description }}"></textarea>
 
         <div class="imagelab">
             <label for class="form-label">image:</label>
         </div>
-        <input type="file" class="img" name="img">
+        <input type="file" class="img" name="img" value="{{ $item->img }}">
 
         <button type="submit" class="button">kirim</button>
     </form>
