@@ -33,3 +33,5 @@ Route::post('/createsp', [RecipeController::class, 'store'])->name('createsp');
 Route::post('/loginp', [LoginController::class, 'loginPost'])->name('loginp');
 Route::post('/registerp', [Registercontroller::class, 'registerPost'])->name('registerp');
 
+//route::delete('/deletesp/{id}', [RecipeController::class, 'destroy'])->name('deletesp');
+

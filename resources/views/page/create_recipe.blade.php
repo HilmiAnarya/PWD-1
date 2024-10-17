@@ -18,13 +18,9 @@
         </div>
     </nav>
 
-<<<<<<< HEAD
     <div class="create">
         <form action="{{route('createsp')}}" method="post">
             @csrf
-            <div class="name">
-    <div class="form">
-        <form action="{{url('')}}" method="post">
             <div class="namelab">
                 <label for class="form-label">Name:</label>
             </div>
@@ -33,7 +29,6 @@
             <div class="desclab">
                 <label for class="form-label">Description:</label>
             </div>
-
             <textarea class="desc" name="desc" placeholder="Description:"></textarea>
 
             <div class="imagelab">
@@ -42,7 +37,6 @@
             <input type="file" class="img" name="img">
 
             <button type="submit" class="button">kirim</button>
-
         </form>
     </div>
 </body>

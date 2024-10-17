@@ -26,5 +26,6 @@ class RecipeController extends Controller
     public function delete(){
         $find = Recipe::find('id');
         $find->delete();
+        return view('/page/profile');
     }
 }
