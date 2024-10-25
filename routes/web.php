@@ -31,15 +31,14 @@ Route::get('/editform', function(){
 
 Route::get('/showrecipe', [RecipeController::class, 'index'])->name('showrecipe');
 
-Route::get('/createsg', [RecipeController::class, 'create']);
-Route::post('/createsp', [RecipeController::class, 'store'])->name('createsp');
+Route::get('/showrecipe/create', [RecipeController::class, 'create'])->name('showrecipe.create');
+Route::post('/showrecipe', [RecipeController::class, 'store'])->name('showrecipe.store');
 
-route::get('/editg', [RecipeController::class, 'edit']);
-Route::put('/items', [RecipeController::class, 'update'])->name('updateitems');
+Route::put('/showrecipe/edit/{id}', [RecipeController::class, 'update'])->name('showrecipe.edit');
+Route::put('/showrecipe/update', [RecipeController::class, 'update'])->name('showrecipe.update');
 
+Route::post('/login/post', [LoginController::class, 'loginPost'])->name('login');
+Route::post('/register/post', [Registercontroller::class, 'registerPost'])->name('register');
 
-Route::post('/loginp', [LoginController::class, 'loginPost'])->name('loginp');
-Route::post('/registerp', [Registercontroller::class, 'registerPost'])->name('registerp');
-
-route::delete('/deleter', [RecipeController::class, 'delete'])->name('deletes');
+route::delete('/delete', [RecipeController::class, 'delete'])->name('delete');
 

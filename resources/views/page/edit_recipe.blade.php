@@ -19,9 +19,11 @@
 </nav>
 
 <div class="edit">
-    <form action="{{route('updateitems')}}" method="post">
+    <form action="{{route('showrecipe.update')}}" method="post">
         @csrf
         @method('PUT')
+        <input type="hidden" name="_id" value="{{ $data->id }}">
+
         <div class="namelab">
             <label for class="form-label">Name:</label>
         </div>

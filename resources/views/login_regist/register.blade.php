@@ -20,7 +20,7 @@
     </div>
 
     <div class="form">
-        <form action="{{route('registerp')}}" method="post">
+        <form action="{{route('register')}}" method="post">
             @csrf
                 <input type="text" class="email" name="email" placeholder="EMAIL">
                 <input type="text" class="username" name="name" placeholder="USERNAME">

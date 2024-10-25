@@ -21,7 +21,7 @@
 
 
     <div class="form">
-        <form action="{{route('loginp')}}" method="post">
+        <form action="{{route('login/post')}}" method="post">
             @csrf
                 <input type="text" class="email" name="email" placeholder="EMAIL">
                 <input type="text" class="username" name="name" placeholder="USERNAME">

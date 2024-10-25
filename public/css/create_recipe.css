@@ -59,7 +59,7 @@ form button{
     justify-items: center;
 }
 
-.recipe{
+.email{
     display: flex;
     align-content: center;
     width: 150%;
@@ -70,19 +70,17 @@ form button{
     border-radius: 15px;
 }
 
-.desc{
+.username{
     justify-content: center;
     width: 150%;
-    height: 50vh;
     margin: 25px;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #E6E4E4;
     border-radius: 15px;
-    resize: vertical;
 }
 
-.img{
+.password{
     justify-content: center;
     width: 150%;
     margin: 25px;
@@ -108,8 +106,9 @@ form button{
     margin-bottom: 10px;
 }
 
-input {
+input{
     border: none;
+    font-size: 20;
 }
 
 .regist{
@@ -118,13 +117,5 @@ input {
     text-align: center;
     justify-items: center;
     justify-content: center;
-
-}
-
-.form-label{
-    text-align: left;
-}
-
-.desc input{
 
 }

@@ -36,7 +36,10 @@
             </div>
             <input type="file" class="img" name="img">
 
-            <button type="submit" class="button">kirim</button>
+            <div class="button">
+                <button type="submit" class="button">kirim</button>
+            </div>
+
         </form>
     </div>
 </body>

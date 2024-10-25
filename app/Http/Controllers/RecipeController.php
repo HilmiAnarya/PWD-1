@@ -8,38 +8,46 @@ use Illuminate\View\View;
 
 class RecipeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $recipes = Recipe::all();
-        return view('/page/recipe', compact('recipes'));
+        return view('/page/recipe', ['recipes' => $recipes]);
     }
 
-    public function create(){
+    public function create()
+    {
         return view('recipes.create');
-
     }
 
-    public function edit(){
-        return view('recipes.edit');
+    public function edit($id)
+    {
+        $recipes = recipe::find($id);
+        return view('recipes.edit', ['recipes' => $recipes]);
     }
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $create = Recipe::create($request->all());
         dd($create);
-        return redirect()->route('/recipe');
+        return redirect()->route('showrecipe');
     }
 
-    public function delete(){
+    public function delete()
+    {
         $finddel = Recipe::find('id');
         $finddel->delete();
-        return view('/page/profile');
+        return view('showrecipe');
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        $item = Recipe::find($id);
+        $item = Recipe::find($request->id);
+
         $item->recipe_name = $request->input('recipe_name');
         $item->description = $request->input('description');
         $item->img = $request->input('img');
 
-        return redirect('/page/profile');
+        $item->update();
+
+        return redirect('showrecipe');
     }
 }
