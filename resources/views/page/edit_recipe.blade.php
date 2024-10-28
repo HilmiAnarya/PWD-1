@@ -19,7 +19,7 @@
 </nav>
 
 <div class="edit">
-    <form action="{{route('showrecipe.update')}}" method="post">
+    <form action="{{route('showrecipe.update')}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <input type="hidden" name="_id" value="{{ $data->id }}">

@@ -21,14 +21,13 @@
 
 
     <div class="form">
-        <form action="{{route('login/post')}}" method="post">
+        <form action="{{route('logins')}}" method="post">
             @csrf
                 <input type="text" class="email" name="email" placeholder="EMAIL">
-                <input type="text" class="username" name="name" placeholder="USERNAME">
                 <input type="password" class="password" name="password" placeholder="PASSWORD">
                 <button type="submit" class="button">Login</button>
             <div class="regist">
-                <p>Don't have account? <a href="/register">Register</a>
+                <p>Don't have account? <a href="/registers">Register</a>
                 <p>
             </div>
         </form>

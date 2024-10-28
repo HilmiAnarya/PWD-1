@@ -14,7 +14,7 @@
                 <p><a href="/login">Login</a></p>
             </div>
             <div class="logo">
-                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
+                <a href="{{route('showrecipe')}}"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
                 <div class="profile">

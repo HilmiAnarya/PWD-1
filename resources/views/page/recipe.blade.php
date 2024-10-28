@@ -10,11 +10,11 @@
     <nav>
         <div class="navbar">
             <div class="left-row">
-                <p> <a href="/recipe">Recipes</a>
+                <p>Recipes</a>
                 </p>
             </div>
             <div class="logo">
-                <a href="/recipe"><img src="img/cucinare 2.png" alt=""></a>
+                <a href="{{route('showrecipe')}}"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
                 <p> <a href="/profile">Profile</a>

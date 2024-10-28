@@ -30,12 +30,12 @@ class Logincontroller extends Controller
 
             return redirect()->route('showrecipe');
         }else {
-            return redirect()->route('login')->with('failed','Email atau Password Salah');
+            return redirect('/logins')->with('failed','Email atau Password Salah');
         }
     }
 
     public function logout() {
         Auth::logout();
-        return redirect()->route('login')->with('success','kamu berhasil logout');
+        return redirect('logins')->with('success','kamu berhasil logout');
     }
 }

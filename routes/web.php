@@ -13,11 +13,11 @@ Route::get('/profile', function(){
     return view('/page/profile');
 });
 
-Route::get('/login', function(){
+Route::get('/logins', function(){
     return view('/login_regist/login');
 });
 
-Route::get('/register', function(){
+Route::get('/registers', function(){
     return view('/login_regist/register');
 });
 
@@ -37,8 +37,8 @@ Route::post('/showrecipe', [RecipeController::class, 'store'])->name('showrecipe
 Route::put('/showrecipe/edit/{id}', [RecipeController::class, 'update'])->name('showrecipe.edit');
 Route::put('/showrecipe/update', [RecipeController::class, 'update'])->name('showrecipe.update');
 
-Route::post('/login/post', [LoginController::class, 'loginPost'])->name('login');
-Route::post('/register/post', [Registercontroller::class, 'registerPost'])->name('register');
+Route::post('/login/post', [LoginController::class, 'loginPost'])->name('logins');
+Route::post('/register/post', [Registercontroller::class, 'registerPost'])->name('registers');
 
-route::delete('/delete', [RecipeController::class, 'delete'])->name('delete');
+Route::delete('/delete', [RecipeController::class, 'delete'])->name('delete');
 

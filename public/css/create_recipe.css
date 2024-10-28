@@ -34,7 +34,7 @@
     margin-bottom: -30px;
 }
 
-.form {
+.create {
     width: 100%;
     background-color: transparent;
     color: aliceblue;
@@ -59,7 +59,7 @@ form button{
     justify-items: center;
 }
 
-.email{
+.recipe{
     display: flex;
     align-content: center;
     width: 150%;
@@ -70,7 +70,19 @@ form button{
     border-radius: 15px;
 }
 
-.username{
+.desc{
+    justify-content: center;
+    width: 150%;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #E6E4E4;
+    border-radius: 15px;
+    resize: vertical;
+    scrollbar-gutter: unset;
+}
+
+.img{
     justify-content: center;
     width: 150%;
     margin: 25px;
@@ -80,17 +92,7 @@ form button{
     border-radius: 15px;
 }
 
-.password{
-    justify-content: center;
-    width: 150%;
-    margin: 25px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #E6E4E4;
-    border-radius: 15px;
-}
-
-.form .button {
+.create .button {
     height: 45px;
     width: 69%;
     background-color: #E6E4E4;

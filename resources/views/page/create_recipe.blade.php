@@ -19,7 +19,7 @@
     </nav>
 
     <div class="create">
-        <form action="{{route('createsp')}}" method="post">
+        <form action="{{route('showrecipe.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="namelab">
                 <label for class="form-label">Name:</label>

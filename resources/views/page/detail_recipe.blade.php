@@ -13,7 +13,7 @@
                 <p>Recipes</p>
             </div>
             <div class="logo">
-                <a href="/rec ipe"><img src="img/cucinare 2.png" alt=""></a>
+                <a href="{{route('showrecipe')}}"><img src="img/cucinare 2.png" alt=""></a>
             </div>
             <div class="right-row">
                 <p>Profile</p>
@@ -29,7 +29,7 @@
             <img src="ketoprak" alt="">
         </div>
         <div class="bahan">
-
+            <p>iya</p>
         </div>
         <div class="step">
 
