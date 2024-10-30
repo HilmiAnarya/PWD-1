@@ -42,5 +42,65 @@
 
         </form>
     </div>
+
+    <script>
+        let ingredientIndex = 1;
+        let stepIndex = 1;
+
+        // Add Ingredient Function
+        function addIngredient() {
+            const container = document.getElementById('ingredients-container');
+
+            const ingredientDiv = document.createElement('div');
+            ingredientDiv.classList.add('ingredient');
+            ingredientDiv.style.marginBottom = '10px';
+
+            ingredientDiv.innerHTML = `
+            <label>Ingredient Name:</label>
+            <input type="text" name="ingredients[${ingredientIndex}][name]" required>
+
+            <label>Quantity:</label>
+            <input type="text" name="ingredients[${ingredientIndex}][quantity]" required>
+
+            <label>Unit:</label>
+            <input type="text" name="ingredients[${ingredientIndex}][unit]" required>
+
+            <button type="button" onclick="removeIngredient(this)">Remove</button>
+        `;
+
+            container.appendChild(ingredientDiv);
+            ingredientIndex++;
+        }
+
+        // Remove Ingredient Function
+        function removeIngredient(button) {
+            button.parentNode.remove();
+        }
+
+        // Add Step Function
+        function addStep() {
+            const container = document.getElementById('steps-container');
+
+            const stepDiv = document.createElement('div');
+            stepDiv.classList.add('step');
+            stepDiv.style.marginBottom = '10px';
+
+            stepDiv.innerHTML = `
+            <label>Step ${stepIndex + 1}:</label>
+            <textarea name="steps[${stepIndex}][description]" required></textarea>
+
+            <button type="button" onclick="removeStep(this)">Remove</button>
+        `;
+
+            container.appendChild(stepDiv);
+            stepIndex++;
+        }
+
+        // Remove Step Function
+        function removeStep(button) {
+            button.parentNode.remove();
+        }
+    </script>
+
 </body>
 </html>

@@ -34,6 +34,7 @@
                     {{$resep->img}}
                 </div>
                     {{$resep->recipe_name}}
+                    {{$resep->desc}}
             @endforeach
         </div>
     </div>
