@@ -70,7 +70,19 @@ form button{
     border-radius: 15px;
 }
 
-.desc{
+.ingridients{
+    justify-content: center;
+    width: 150%;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #E6E4E4;
+    border-radius: 15px;
+    resize: vertical;
+    scrollbar-gutter: unset;
+}
+
+.step{
     justify-content: center;
     width: 150%;
     margin: 25px;
