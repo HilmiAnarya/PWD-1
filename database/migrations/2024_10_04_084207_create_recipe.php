@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('recipes', function (Blueprint $table) {
             $table->id()->autoIncrement();
+            $table->string("img",255);
             $table->string("recipe_name",255);
             $table->json("ingredients");
-            $table->json("step_by_step");
+            $table->json("steps");
             $table->string("creator_name", 255);
             $table->timestamp("publish_date");
-            $table->string("img",255);
         });
     }
 

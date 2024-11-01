@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('/css/create_recipe.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/create_recipe.css') }}">
 </head>
 <body>
     <nav>
@@ -31,19 +31,21 @@
             </div>
             <input type="text" class="recipe" name="recipe_name" placeholder="Recipe name:">
 
-            <div class="ingredientslab">
-                <label for class="form-label">Ingredients:</label>
+            <p>Ingredients:</p>
+            <div id="ingredients-container">
+                <input type="text" class="ingredient" name="ingredients[0][name]" required>
+                <button type="button" onclick="removeIngredient(this)" style="display: none;">Remove</button>
             </div>
-            <input type="text" name="ingredients[0]" class="ingredients" placeholder="Add ingredients:">
             <button type="button" onclick="addIngredient()">Add Ingredient</button>
-            <button type="button" onclick="removeIngredient(this)">Remove</button>
 
-            <div class="steplab">
-                <label for class="form-label">Step:</label>
+            <div class="steplabel">
+                <label>Step 1:</label>
             </div>
-            <input type="text" name="step_by_step[0]" class="step" placeholder="Add step:">
-            <button type="button" onclick="addStep()">Add Step</button>
-            <button type="button" onclick="removeStep(this)" >Remove</button>
+            <div id="steps-container">
+                <input type="text" class="steps" name="steps[0][description]" required>
+                <button type="button" onclick="removeStep(this)" style="display: none;">Remove</button>
+            </div>
+            <button type="button" onclick="addStep()">Add Ingredient</button>
 
             <div class="button">
                 <button type="submit" class="button">kirim</button>
@@ -59,13 +61,10 @@
         function addIngredient() {
             const container = document.getElementById('ingredients-container');
 
-            const ingredientDiv = document.createElement('div');
-            ingredientDiv.classList.add('ingredient');
-            ingredientDiv.style.marginBottom = '10px';
+                const ingredientDiv = document.createElement('div');
 
             ingredientDiv.innerHTML = `
-            <label>Ingredient Name:</label>
-            <input type="text" name="ingredients[${ingredientIndex}]" required>
+            <input type="text" class="ingredient" name="ingredients[${ingredientIndex}][name]" required>
 
             <button type="button" onclick="removeIngredient(this)">Remove</button>
         `;
@@ -83,13 +82,13 @@
         function addStep() {
             const container = document.getElementById('steps-container');
 
-            const stepDiv = document.createElement('div');
-            stepDiv.classList.add('step');
-            stepDiv.style.marginBottom = '10px';
+            const stepDiv = document.createElement('div')
 
             stepDiv.innerHTML = `
-            <label>Step ${stepIndex + 1}:</label>
-            <textarea name="steps[${stepIndex}][description]" required></textarea>
+            <div class="steplabel">
+                <label>Step ${stepIndex + 1}:</label>
+            </div>
+            <textarea name="steps[${stepIndex}][description]" class="steps" required></textarea>
 
             <button type="button" onclick="removeStep(this)">Remove</button>
         `;

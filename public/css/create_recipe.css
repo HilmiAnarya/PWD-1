@@ -27,12 +27,7 @@
     height: 100px;
 }
 
-.textform{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: -30px;
-}
+
 
 .create {
     width: 100%;
@@ -70,9 +65,18 @@ form button{
     border-radius: 15px;
 }
 
-.ingridients{
-    justify-content: center;
-    width: 150%;
+.ingredient{
+    align-content: center;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #E6E4E4;
+    border-radius: 15px;
+}
+
+.steps{
+    align-content: center;
+    display: flex;
     margin: 25px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -82,16 +86,8 @@ form button{
     scrollbar-gutter: unset;
 }
 
-.step{
-    justify-content: center;
-    width: 150%;
-    margin: 25px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #E6E4E4;
-    border-radius: 15px;
-    resize: vertical;
-    scrollbar-gutter: unset;
+.steplabel{
+    margin-top: 10px;
 }
 
 .img{
@@ -118,18 +114,6 @@ form button{
     display: flex;
     border-radius: 15px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-input{
-    border: none;
-    font-size: 20;
-}
-
-.regist{
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
-
-}

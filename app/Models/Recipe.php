@@ -11,11 +11,17 @@ class Recipe extends Model
     public $timestamps = false;
     protected $fillable = [
         'id',
+        'img',
         'recipe_name',
-        'description',
+        'ingredients',
+        'steps',
         'creator name',
-        'publish_date',
-        'img'
+        'publish_date'
+    ];
+
+    protected $casts = [
+        'ingredients' => 'array',
+        'steps' => 'array',
     ];
 
 }

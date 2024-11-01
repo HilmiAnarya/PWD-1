@@ -35,6 +35,11 @@
                 </div>
                     {{$resep->recipe_name}}
                     {{$resep->desc}}
+                <ul>
+                    @foreach($resep->ingredients as $ig)
+                        <li>{{ $ig['name'] }}</li>
+                    @endforeach
+                </ul>
             @endforeach
         </div>
     </div>
