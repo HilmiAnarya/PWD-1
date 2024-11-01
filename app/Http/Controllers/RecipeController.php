@@ -43,7 +43,8 @@ class RecipeController extends Controller
         $item = Recipe::find($request->id);
 
         $item->recipe_name = $request->input('recipe_name');
-        $item->description = $request->input('description');
+        $item->ingredients = $request->input('ingredients');
+        $item->step_by_step = $request->input('step_by_step');
         $item->img = $request->input('img');
 
         $item->update();

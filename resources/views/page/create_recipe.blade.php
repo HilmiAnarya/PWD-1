@@ -38,8 +38,6 @@
             <button type="button" onclick="addIngredient()">Add Ingredient</button>
             <button type="button" onclick="removeIngredient(this)">Remove</button>
 
-
-
             <div class="steplab">
                 <label for class="form-label">Step:</label>
             </div>
