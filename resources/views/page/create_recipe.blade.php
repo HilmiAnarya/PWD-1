@@ -45,10 +45,10 @@
                 <input type="text" class="steps" name="steps[0][description]" required>
                 <button type="button" onclick="removeStep(this)" style="display: none;">Remove</button>
             </div>
-            <button type="button" onclick="addStep()">Add Ingredient</button>
+            <button type="button" onclick="addStep()">Add Step</button>
 
             <div class="button">
-                <button type="submit" class="button">kirim</button>
+                <button type="submit" class="button">Upload</button>
             </div>
         </form>
     </div>

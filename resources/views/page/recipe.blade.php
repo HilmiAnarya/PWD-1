@@ -31,15 +31,11 @@
         <div class="col">
             @foreach($recipes as $resep)
                 <div class="img">
-                    {{$resep->img}}
+                    <img src="{{asset('/storage/'.$resep->img)}}" alt="">
                 </div>
-                    {{$resep->recipe_name}}
-                    {{$resep->desc}}
-                <ul>
-                    @foreach($resep->ingredients as $ig)
-                        <li>{{ $ig['name'] }}</li>
-                    @endforeach
-                </ul>
+                <div>
+                    {{$resep -> recipe_name}}
+                </div>
             @endforeach
         </div>
     </div>

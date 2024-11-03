@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Recipe;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class RecipeController extends Controller
@@ -35,16 +36,22 @@ class RecipeController extends Controller
             'steps.*.description' => 'required|string'
         ]);
 
-        // Store the image and save the file path
-        $data['img'] = $request->file('img')->store('images', 'public');
+        // Store the image with its original filename in the 'images' directory
+        $image = $request->file('img');
+        $originalName = date('Y-m-d').$image->getClientOriginalName();
+        $imagePath = $image->storeAs('images', $originalName, 'public');
 
-        // Create the Recipe with validated data
+        // Update the 'img' field in the data array with the stored path
+        $data['img'] = $imagePath;
+
+        // Create the Recipe instance with validated data
         $create = Recipe::create($data);
 
-        dd($create->ingredients); // Inspect the created recipe object
+//        dd($create); // Inspect the created recipe object
 
         return redirect()->route('showrecipe');
     }
+
 
 
     public function delete()
